@@ -59,6 +59,9 @@
       margin-bottom: 1rem;
       font-size: 1rem;
     }
+    .form-section input[type="file"] {
+      padding: 0.5rem;
+    }
     .form-section button {
       background-color: #d22;
       color: #fff;
@@ -102,13 +105,15 @@
 
   <section class="section form-section">
     <h2>Submit Your Resume</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
+    <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <input type="url" name="linkedin" placeholder="LinkedIn Profile URL">
+      <input type="file" name="resume" accept=".pdf,.doc,.docx">
       <textarea name="message" placeholder="Tell me what you're looking for..." rows="5"></textarea>
       <button type="submit">Send</button>
     </form>
+    <p>If you're unsure what kind of role fits your background, feel free to reach out! I'm here to help you explore your options.</p>
   </section>
 
   <section class="section">
