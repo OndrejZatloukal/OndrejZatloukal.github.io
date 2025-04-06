@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ondrej Zatloukal - Technical Recruiter</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var tallyIframe = document.querySelector("iframe[data-tally-src]");
+      if (tallyIframe) {
+        tallyIframe.setAttribute("src", tallyIframe.getAttribute("data-tally-src"));
+      }
+    });
+  </script>
   <style>
     * {
       margin: 0;
