@@ -1,56 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ondrej Zatloukal - Technical Recruiter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    .container {
-      max-width: 600px;
-      padding: 2rem;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 12px;
-    }
-    h1 {
+    header h1 {
       font-size: 2.5rem;
-      color: #333;
     }
-    p {
-      font-size: 1.2rem;
-      color: #666;
+    .intro {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
     }
-    a.button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #007acc;
-      color: white;
+    .intro img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 100px;
+      margin-bottom: 1rem;
+    }
+    .section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .section h2 {
+      color: #d22;
+      margin-bottom: 1rem;
+    }
+    .form-section input,
+    .form-section textarea,
+    .form-section button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .form-section button {
+      background-color: #d22;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f9f9f9;
+      margin-top: 4rem;
+    }
+    a {
+      color: #d22;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s;
     }
-    a.button:hover {
-      background-color: #005fa3;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>👋 Welcome to My Site</h1>
-    <p>This site is under construction. Stay tuned!</p>
-    <a href="mailto:you@example.com" class="button">Contact Me</a>
+  <header>
+    <h1>Ondrej Zatloukal</h1>
+    <p>Technical Recruiter in Japan | Bilingual Tech Opportunities</p>
+  </header>
+
+  <div class="intro">
+    <img src="https://placehold.co/120x120" alt="Ondrej Zatloukal">
+    <p>Helping tech professionals find the right opportunities in Japan. Reach out if you're looking for roles in software engineering, product, DevOps, QA, and more!</p>
   </div>
+
+  <section class="section">
+    <h2>What I Help With</h2>
+    <ul>
+      <li>Connecting you with top tech companies in Japan</li>
+      <li>Resume and interview coaching</li>
+      <li>Support with bilingual & visa-friendly opportunities</li>
+    </ul>
+  </section>
+
+  <section class="section form-section">
+    <h2>Submit Your Resume</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="url" name="linkedin" placeholder="LinkedIn Profile URL">
+      <textarea name="message" placeholder="Tell me what you're looking for..." rows="5"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section class="section">
+    <h2>Resources & Blog</h2>
+    <ul>
+      <li><a href="#">Top English-Speaking Tech Companies in Japan</a></li>
+      <li><a href="#">How to Prepare for a Tech Interview in Japan</a></li>
+      <li><a href="#">Remote Developer Jobs in Japan - 2025</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ondrej Zatloukal | All Rights Reserved</p>
+    <p><small>Site updated April 2025</small></p>
+  </footer>
 </body>
 </html>
